@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/app/Immagini/:path*",
+      "destination": "https://mavxcmz0j7m9hokm.public.blob.vercel-storage.com/app/Immagini/:path*"
+    }
+  ]
+}
