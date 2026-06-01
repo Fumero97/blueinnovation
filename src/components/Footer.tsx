@@ -111,7 +111,7 @@ export default function Footer() {
                 <p>info@blueinnovation.it</p>
                 <p>P.IVA 03833320785</p>
                 <p>PEC blueinnovation@pec.it</p>
-                <p>SDI: J6URRTW</p>
+                <p>SDI: KRRH6B9</p>
               </div>
             </div>
 
