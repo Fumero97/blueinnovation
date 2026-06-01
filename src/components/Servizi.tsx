@@ -78,7 +78,7 @@ export default function Servizi() {
                 <p className="font-sans-ui text-[11px] font-semibold tracking-[0.2em] uppercase text-white/35 mb-6">
                   {t("servizi.wellbeSubtitle")}
                 </p>
-                <p className="font-sans-ui text-white/60 text-base leading-relaxed max-w-lg">
+                <p className="font-sans-ui text-white/85 lg:text-white/60 text-base leading-relaxed max-w-lg">
                   {t("servizi.wellbeDesc")}
                 </p>
                 <div className="mt-10 inline-flex items-center gap-3 border-b border-white/30 pb-1 text-white/70 hover:text-white hover:border-white transition-all duration-300 group-hover:gap-4">
