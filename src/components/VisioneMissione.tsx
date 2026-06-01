@@ -46,7 +46,7 @@ export default function VisioneMissione() {
                 {t("visione.heading3")}<br />{t("visione.heading4")}
               </em>
             </h2>
-            <p className="font-sans-ui text-white/60 text-base lg:text-[17px] leading-[1.75] max-w-lg">
+            <p className="font-sans-ui text-white/85 lg:text-white/60 text-base lg:text-[17px] leading-[1.75] max-w-lg">
               {t("visione.paragraph")}
             </p>
 
