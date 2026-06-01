@@ -121,27 +121,27 @@ export default function Servizi() {
             return (
               <div
                 key={i}
-                className="scroll-fade-in group border-b border-border overflow-hidden cursor-default"
+                className="scroll-fade-in group border-b border-border overflow-hidden cursor-default bg-primary lg:bg-transparent"
                 style={{ transitionDelay: `${i * 60}ms` }}
               >
-                <div className="grid grid-cols-[60px_1fr_auto] gap-8 lg:gap-16 items-center py-7 px-2 -mx-2 transition-colors duration-300 group-hover:bg-primary">
-                  <span className="font-sans-ui text-[11px] font-bold tracking-widest text-muted-foreground/40 group-hover:text-white/30 transition-colors duration-300">
+                <div className="grid grid-cols-[40px_1fr_auto] lg:grid-cols-[60px_1fr_auto] gap-4 lg:gap-16 items-center py-7 px-4 lg:px-2 lg:-mx-2 transition-colors duration-300 lg:group-hover:bg-primary">
+                  <span className="font-sans-ui text-[11px] font-bold tracking-widest text-white/40 lg:text-muted-foreground/40 lg:group-hover:text-white/30 transition-colors duration-300">
                     0{i + 2}
                   </span>
                   <div className="flex items-center gap-3 flex-wrap">
-                    <h3 className="font-display text-xl lg:text-2xl font-bold text-foreground tracking-tight group-hover:text-white transition-colors duration-300">
+                    <h3 className="font-display text-xl lg:text-2xl font-bold text-white lg:text-foreground tracking-tight lg:group-hover:text-white transition-colors duration-300">
                       {service.title}
                     </h3>
-                    <span className="font-sans-ui text-[10px] font-semibold tracking-widest uppercase text-primary/60 border border-primary/20 rounded-full px-2.5 py-0.5 group-hover:text-white/50 group-hover:border-white/20 transition-colors duration-300">
+                    <span className="font-sans-ui text-[10px] font-semibold tracking-widest uppercase text-white/60 border border-white/25 lg:text-primary/60 lg:border-primary/20 rounded-full px-2.5 py-0.5 lg:group-hover:text-white/50 lg:group-hover:border-white/20 transition-colors duration-300">
                       {service.tag}
                     </span>
                   </div>
-                  <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center flex-shrink-0 group-hover:border-white/30 transition-colors duration-300">
-                    <Icon size={17} className="text-muted-foreground group-hover:text-white/70 transition-colors duration-300" />
+                  <div className="w-10 h-10 rounded-full border border-white/25 lg:border-border flex items-center justify-center flex-shrink-0 lg:group-hover:border-white/30 transition-colors duration-300">
+                    <Icon size={17} className="text-white/70 lg:text-muted-foreground lg:group-hover:text-white/70 transition-colors duration-300" />
                   </div>
                 </div>
-                <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-hover:max-h-24 bg-primary">
-                  <p className="font-sans-ui text-white/60 text-sm leading-relaxed px-2 pb-6 ml-[calc(60px+2rem)] lg:ml-[calc(60px+4rem)] max-w-2xl">
+                <div className="max-h-96 lg:max-h-0 overflow-hidden transition-all duration-500 ease-in-out lg:group-hover:max-h-24 bg-primary">
+                  <p className="font-sans-ui text-white/85 lg:text-white/60 text-sm leading-relaxed px-4 lg:px-2 pb-6 ml-[calc(40px+1rem)] lg:ml-[calc(60px+4rem)] max-w-2xl">
                     {service.description}
                   </p>
                 </div>
