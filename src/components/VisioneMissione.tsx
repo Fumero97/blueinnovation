@@ -66,10 +66,10 @@ export default function VisioneMissione() {
               <span className="font-sans-ui text-[11px] font-semibold tracking-[0.22em] uppercase text-white/30 block mb-8">
                 {t("visione.missionLabel")}
               </span>
-              <p className="font-sans-ui text-white/65 text-[16px] lg:text-[17px] leading-[1.8] mb-6">
+              <p className="font-sans-ui text-white/90 lg:text-white/65 text-[16px] lg:text-[17px] leading-[1.8] mb-6">
                 {t("visione.missionP1")}
               </p>
-              <p className="font-sans-ui text-white/65 text-[16px] lg:text-[17px] leading-[1.8]">
+              <p className="font-sans-ui text-white/90 lg:text-white/65 text-[16px] lg:text-[17px] leading-[1.8]">
                 {t("visione.missionP2Start")}{" "}
                 <strong className="text-white font-semibold">{t("visione.missionP2Bold")}</strong>{" "}
                 {t("visione.missionP2End")}
