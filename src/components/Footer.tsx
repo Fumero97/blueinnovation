@@ -1,6 +1,7 @@
 import { Linkedin, Mail, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Button } from "@/components/ui/button";
 import logoImg from "@/assets/logo.png";
 import logoWhiteImg from "@/assets/logo-white.png";
 import certGreenHosting from "@/assets/cert-green-hosting.png";
@@ -8,7 +9,7 @@ import certIso from "@/assets/cert-iso14001.png";
 import certBenefit from "@/assets/cert-societa-benefit.png";
 
 export default function Footer() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   const menuLinks = [
     { label: t("nav.valori"), href: "#valori" },
@@ -149,6 +150,9 @@ export default function Footer() {
                 {item}
               </Link>
             ))}
+            <Button asChild variant="link" className="h-auto p-0 font-sans-ui text-[11px] font-normal text-primary-foreground/60 hover:text-primary-foreground">
+              <Link to="/parita-di-genere">{lang === "it" ? "Parità di genere" : "Gender equality"}</Link>
+            </Button>
             <a
               href="https://www.notion.so/Lavora-Blue-Innovation-15a28ceeb7d980a8a4fada20718d331c"
               target="_blank"

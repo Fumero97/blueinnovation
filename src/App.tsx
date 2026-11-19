@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Progetti from "./pages/Progetti";
 import ProgettoAtlas from "./pages/ProgettoAtlas";
+import ParitaDiGenere from "./pages/ParitaDiGenere";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/parita-di-genere" element={<ParitaDiGenere />} />
             <Route path="/progetti" element={<Progetti />} />
             <Route path="/progetti/atlas" element={<ProgettoAtlas />} />
             <Route path="*" element={<NotFound />} />
