@@ -3,6 +3,14 @@
     {
       "source": "/app/Immagini/:path*",
       "destination": "https://mavxcmz0j7m9hokm.public.blob.vercel-storage.com/app/Immagini/:path*"
+    },
+    {
+      "source": "/__l5e/assets-v1/:path*",
+      "destination": "https://blueinnovation.lovable.app/__l5e/assets-v1/:path*"
+    },
+    {
+      "source": "/((?!assets/|__l5e/|app/Immagini/|.*\\.[^/]+$).*)",
+      "destination": "/index.html"
     }
   ]
 }

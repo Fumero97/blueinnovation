@@ -6,4 +6,5 @@
 - [x] Verify desktop/mobile navigation and the downloaded document.
 - [x] Diagnose reported download failure: PDF returns valid content on Lovable, but the external www domain returns 404.
 - [x] Add and verify a direct PDF opening fallback for browsers restricting preview downloads.
-- [ ] Restore www.blueinnovation.it access — awaiting the user's choice of Lovable or Vercel hosting.
+- [x] Prepare Vercel routing for direct page navigation and same-origin PDF delivery.
+- [ ] Restore www.blueinnovation.it access — requires a new deployment in the user's Vercel project; no Vercel deployment access is available here.
