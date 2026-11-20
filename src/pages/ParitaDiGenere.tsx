@@ -11,11 +11,18 @@ export default function ParitaDiGenere() {
   const content = genderEquality[lang];
   const it = lang === "it";
   const download = (
-    <Button asChild variant="link" className="h-auto justify-start px-0 py-2 whitespace-normal text-left">
-      <a href={policyAsset.url} download="Politica-Parita-di-Genere-Blue-Innovation.pdf">
-        <Download aria-hidden="true" />{content.download}
-      </a>
-    </Button>
+    <div className="flex flex-col items-start gap-1">
+      <Button asChild variant="link" className="h-auto justify-start px-0 py-2 whitespace-normal text-left">
+        <a href={policyAsset.url} download="Politica-Parita-di-Genere-Blue-Innovation.pdf">
+          <Download aria-hidden="true" />{content.download}
+        </a>
+      </Button>
+      <Button asChild variant="link" className="h-auto justify-start px-0 py-2 whitespace-normal text-left">
+        <a href={`https://blueinnovation.lovable.app${policyAsset.url}`} target="_blank" rel="noopener noreferrer">
+          <FileText aria-hidden="true" />{it ? "Apri il PDF" : "Open PDF"}
+        </a>
+      </Button>
+    </div>
   );
   const details = [
     [it ? "Programma" : "Programme", "PR Calabria FESR FSE+ 2021–2027"],
